@@ -1,0 +1,22 @@
+{
+  "name": "hello",
+  "version": "1.0.0",
+  "description": "hello world!",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ogazitt/hello-friend.git"
+  },
+  "author": "Omri Gazitt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ogazitt/hello-friend/issues"
+  },
+  "homepage": "https://github.com/ogazitt/hello-friend#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
