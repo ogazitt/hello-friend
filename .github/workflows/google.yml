@@ -68,7 +68,7 @@ jobs:
     # Deploy the Docker image to Google Cloud Run
     - name: Deploy
       run: |
-        gcloud run deploy $IMAGE \
+        gcloud run deploy $IMAGE --project $GKE_PROJECT \
           --image gcr.io/$GKE_PROJECT/$IMAGE:$GITHUB_SHA --region $GKE_ZONE \
           --platform managed --allow-unauthenticated
    
