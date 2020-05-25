@@ -62,6 +62,6 @@ jobs:
     - name: Deploy
       run: |
         gcloud run deploy $IMAGE \
-          --image gcr.io/$GKE_PROJECT/$IMAGE --region $GKE_ZONE \
+          --image gcr.io/$GKE_PROJECT/$IMAGE:$GITHUB_SHA --region $GKE_ZONE \
           --platform managed --allow-unauthenticated
    
