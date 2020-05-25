@@ -11,6 +11,8 @@
 name: Build and Deploy to GKE
 
 on:
+  push:
+    branches: [ master ]
   release:
     types: [created]
 
