@@ -42,6 +42,11 @@ jobs:
         service_account_email: ${{ secrets.GKE_EMAIL }}
         service_account_key: ${{ secrets.GKE_KEY }}
 
+    # update components
+    - run: |
+        # update components to bring in 'run'
+        gcloud components update
+
     # Configure docker to use the gcloud command-line tool as a credential helper
     - run: |
         # Set up docker to authenticate
